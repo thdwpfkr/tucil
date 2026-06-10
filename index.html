@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Kecil 1 • Web Client Dev</title>
+    <style>
+        /* CSS hanya diizinkan untuk border styling pada table, th, dan td */
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 4px 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>&#9998; Tugas Kecil 1 – Web Client Development</h2>
+
+    <h3>Identitas Mahasiswa</h3>
+    <p>Nama: Zeika Martand Ariski</p>
+    <p>NIM: 25110300011</p>
+
+    <hr>
+
+    <h3>&#9776; Daftar Mata Kuliah Semester Ini</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Mata Kuliah</th>
+                <th colspan="2">Jadwal</th>
+                <th>SKS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2" style="text-align: center;">1</td>
+                <td rowspan="2">Web Client Development</td>
+                <td>Selasa</td>
+                <td>08.00 - 10.30</td>
+                <td rowspan="2" style="text-align: center;">3</td>
+            </tr>
+            <tr>
+                <td>Kamis</td>
+                <td>13.00 - 14.40</td>
+            </tr>
+            <tr>
+                <td rowspan="2" style="text-align: center;">2</td>
+                <td rowspan="2">Basis Data</td>
+                <td>Senin</td>
+                <td>10.00 - 11.40</td>
+                <td rowspan="2" style="text-align: center;">3</td>
+            </tr>
+            <tr>
+                <td>Rabu</td>
+                <td>13.00 - 14.40</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">3</td>
+                <td>Matematika Diskrit</td>
+                <td>Jumat</td>
+                <td>08.00 - 10.30</td>
+                <td style="text-align: center;">3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" style="text-align: left;">Total SKS</th>
+                <th>9</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <hr>
+
+    <h3>&#9733; Catatan Belajar</h3>
+    <p>Berikut hal-hal penting yang sudah dipelajari di <b>Web Client Development</b>:</p>
+    <ol>
+        <li><b>Struktur HTML</b> – setiap halaman web wajib punya <i>DOCTYPE html, head,</i> dan <i>body</i>.</li>
+        <li>Tag <u>formatting teks</u> seperti <b>bold</b>, <i>italic</i>, <u>underline</u>, <mark>highlight</mark>, maupun <strong>strong</strong>.</li>
+        <li>Perbedaan <code>&lt;b&gt;</code> dan <code>&lt;strong&gt;</code> &rarr; keduanya <b>tebal</b>, tapi <strong>strong</strong> punya makna semantik.</li>
+        <li>Cara membuat hyperlink ke <a href="https://google.com">google</a> dengan tag <code>&lt;a href</code> dan menyisipkan gambar dengan <code>&lt;img src&gt;</code>.</li>
+        <li>Penggunaan <span style="font-family: monospace; font-weight: bold;">inline style</span> untuk <span style="font-family: Arial, sans-serif;">font</span>, <span style="color: gold;">color</span>, dan <span style="letter-spacing: 2px;">spacing</span>.</li>
+    </ol>
+
+    <p>Topik yang masih perlu diperdalam:</p>
+    <ul>
+        <li><mark>CSS Selector</mark> – terutama perbedaan class dan ID.</li>
+        <li><b>Box Model</b> – memahami <i>margin, padding,</i> dan <i>border</i> secara visual.</li>
+        <li>Konsep <u>specificity</u> &mdash; aturan mana yang <b>menang</b> saat ada konflik style.</li>
+    </ul>
+
+    <hr>
+
+    <h3>&#9998; Refleksi Pengerjaan</h3>
+    
+    <h4>Approach</h4>
+<ul>
+    <li>Menganalisis screenshot spesifikasi untuk memahami hierarki dokumen, penggunaan simbol Unicode/ASCII, serta struktur rowspan dan colspan pada tabel.</li>
+    <li>Menyusun dokumen menggunakan tag HTML semantik standar seperti header (h2, h3, h4), paragraf, baris baru, serta list (ol dan ul).</li>
+    <li>Mengimplementasikan elemen khusus seperti inline style untuk tag tertentu, tag formatting teks khusus, serta penyesuaian CSS border murni untuk komponen tabel saja.</li>
+</ul>
+
+    <h4>Catatan</h4>
+<ul>
+    <li>Bagian paling sulit adalah melakukan formatting teks pada poin Catatan Belajar nomor 5 agar persis seperti contoh, karena harus memanipulasi font, warna, dan spacing menggunakan murni inline style tanpa bantuan *external style sheet* atau kelas CSS.</li>
+    <li>Menentukan tata letak *rowspan* dan *colspan* pada tabel jadwal kuliah juga membutuhkan ketelitian ekstra agar struktur baris tidak berantakan saat dirender langsung di browser.</li>
+</ul>
+
+</body>
+</html>
